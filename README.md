@@ -5,7 +5,7 @@
 - [x] Completed content 228 - 233
 - [x] What is defer attribute? https://www.javatpoint.com/javascript-defer
 
-&nbsp
+&nbsp;
 
 09/04/2022
 - [x] Create a GitHub Repo
