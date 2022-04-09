@@ -12,4 +12,5 @@
 - [x] Completed content 234
 - [x] Review content 232: Using Geolocation API
 - [x] Review content 233: Displaying a Map using Leaflet Library
-- [ ] Review content 234: Displaying a Map Marker
+- [x] Review content 234: Displaying a Map Marker
+- [ ] Completed content 235: Rendering Workout Input Form
