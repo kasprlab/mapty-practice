@@ -20,5 +20,8 @@
 
 10/04/2022
 - [x] Complete and review content 237: Refactoring for Project Architecture
-- [ ] Complete and review content 238: Managing Workout Data: Creating Classes
-- [ ] Complete and review content 239: Creating a New Workout
+- [x] Complete and review content 238: Managing Workout Data: Creating Classes
+
+11/04/2022
+- [x] Complete and review content 239: Creating a New Workout
+- [ ] Complete and review content 240: Rendering New Workouts
