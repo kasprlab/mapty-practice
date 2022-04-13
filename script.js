@@ -1,7 +1,5 @@
 'use strict';
 
-
-
 let map, mapEvent;
 
 class Workout {
@@ -72,11 +70,13 @@ class App {
   #map; //private class field
   #mapEvent; //private class field
   #workouts = []; //private class field
+  #mapZoomLevel = 13;
 
   constructor() { //constructor call immediately when an app object is called when the script loads
     this._getPosition();
     form.addEventListener('submit', this._newWorkout.bind(this));
-    inputType.addEventListener('change', this._toggleElevationField) 
+    inputType.addEventListener('change', this._toggleElevationField);
+    containerWorkouts.addEventListener('click', this._moveToPopup.bind(this));
   }
 
   _getPosition() {
@@ -98,7 +98,7 @@ class App {
 
       console.log(this)
 
-      this.#map = L.map('map').setView(coords, 13);
+      this.#map = L.map('map').setView(coords, this.#mapZoomLevel);
 
       L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
           attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -244,6 +244,23 @@ class App {
       `;
 
       form.insertAdjacentHTML('afterend', html);
+  }
+
+  _moveToPopup(e) {
+    const workoutEl = e.target.closest('.workout')
+    console.log(workoutEl)
+
+    if(!workoutEl) return; // guard clause
+
+    const workout = this.#workouts.find(work => work.id === workoutEl.dataset.id)
+    console.log(workout)
+
+    this.#map.setView(workout.coords, this.#mapZoomLevel, {
+      animate:true,
+      pan:{
+        duration: 1
+      }
+    })
   }
 }
 
