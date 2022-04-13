@@ -5,6 +5,7 @@ let map, mapEvent;
 class Workout {
   date = new Date();
   id = (Date.now() + '').slice(-10);//review 238
+  clicks = 0;
 
   constructor(coords, distance, duration){
     this.coords = coords; // [lat, lang]
@@ -17,6 +18,10 @@ class Workout {
     const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
     this.description = `${this.type[0].toUpperCase()}${this.type.slice(1)} on ${months[this.date.getMonth()]} ${this.date.getDate()}`
+  }
+
+  click() {
+    this.clicks++;
   }
 }
 
@@ -260,8 +265,12 @@ class App {
       pan:{
         duration: 1
       }
-    })
+    });
+
+    // using public interface
+    workout.click()
   }
+
 }
 
 const app = new App();
