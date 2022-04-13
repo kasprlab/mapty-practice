@@ -24,4 +24,9 @@
 
 11/04/2022
 - [x] Complete and review content 239: Creating a New Workout
-- [ ] Complete and review content 240: Rendering New Workouts
+- [x] Complete and review content 240: Rendering New Workouts
+
+14/04/2022
+- [ ] Complete and review content 241: Move to marker on click
+- [ ] Complete and review content 242: Working with localStorage
+- [ ] Complete and review content 243: Final Consideration
