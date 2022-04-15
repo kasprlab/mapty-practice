@@ -22,11 +22,19 @@
 - [x] Complete and review content 237: Refactoring for Project Architecture
 - [x] Complete and review content 238: Managing Workout Data: Creating Classes
 
+&nbsp;
+
 11/04/2022
 - [x] Complete and review content 239: Creating a New Workout
 - [x] Complete and review content 240: Rendering New Workouts
 
+&nbsp;
+
 14/04/2022
-- [ ] Complete and review content 241: Move to marker on click
-- [ ] Complete and review content 242: Working with localStorage
-- [ ] Complete and review content 243: Final Consideration
+- [x] Complete and review content 241: Move to marker on click
+
+&nbsp;
+
+15/04/2022
+- [x] Complete and review content 242: Working with localStorage
+- [x] Complete and review content 243: Final Consideration
